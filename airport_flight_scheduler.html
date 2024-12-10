@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airport Network Flight Scheduler</title>
+    <link rel="stylesheet" href="airflight.css">
+</head>
+<body>
+    <header>
+        <h1>Airport Network Flight Scheduler</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Plan Your Flights Seamlessly</h2>
+        <p>Search and schedule flights with ease.</p>
+    </section>
+
+    <section id="schedule">
+        <h2>Search Flights</h2>
+        <form id="flight-form">
+            <label for="source">Source:</label>
+            <input type="text" id="source" placeholder="Enter source airport">
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" placeholder="Enter destination airport">
+            <label for="date">Date:</label>
+            <input type="date" id="date">
+            <button type="button" onclick="searchFlights()">Search</button>
+        </form>
+        <div id="results"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Airport Network Flight Scheduler. Designed by Sagar Kumar Mahto.</p>
+    </footer>
+
+    <script src="airflight.js"></script>
+</body>
+</html>
